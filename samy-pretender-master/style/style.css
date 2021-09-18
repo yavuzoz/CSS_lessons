@@ -1,0 +1,121 @@
+/********************
+General Styling( windows  ctrl+k+c birlikte tuslandiginda yorum satiri olusur
+********************/
+*{
+    box-sizing: border-box;
+}
+/* div etiketleri için uyguladığımız box-sizing:border-box özelliğinden dolayı padding ve border değerlerinin kapladığı alan hesaba katılmaz ve nesnelerin kapladığı alan sadece verdiğimiz genişlik kadar olacaktır.  */
+/********************
+Typology
+********************/
+/* h1 taginin font sekli belirlenmistir  */
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* legend ve blockquote elementlerinin font sekli ve rengi stili belirlenmis */
+legend{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+blockquote{
+    font-size: 16px;
+    color: #aaaaaa;
+    font-style: italic;
+}
+/*fieldset altindaki tüm spanler float right olmus, fieldset dahil*/
+fieldset span{
+    float: right;
+}
+
+/********************
+Colors
+********************/
+blockquote{
+    color: #aaaaaa;
+}
+/* parent child özelliginden tablo td elementi background rengi olusturulmus, arasinda bir bosluk birakarak(even)cift */
+tr:nth-child(even){
+    background: lightskyblue;
+}
+/* tablo baslik tagi bacground ve rengi */
+th{
+    background: #251d1d;
+    color: white;
+}
+
+/********************
+Layout
+********************/
+main{
+    width: 600px;
+    margin: auto;
+}
+
+header{
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+/* conteiner display özelligi flex olarak belirlenmis */
+#content-container{
+    display: flex;
+}
+/* flex-grow -->Mülkiyet belirtir ne kadar öğe aynı kabın içine esnek öğelerin geri kalan kısmına göre artacaktır. */
+#left-side{
+  flex-grow: 1;
+}
+/* flex-grow -->Mülkiyet belirtir ne kadar öğe aynı kabın içine esnek öğelerin geri kalan kısmına göre artacaktır. */
+#right-side{
+    flex-grow: 3;
+}
+
+fieldset{
+    margin-top: 20px;
+}
+
+/********************
+Components
+********************/
+figure{
+    margin:0px;
+}
+
+.profile-image{
+    max-width: 200px;
+}
+
+/*social media img--> div taginin altindaki tüm img taglari kestediliyor*/
+.social-media img{
+    width: 24px;
+}
+/*  */
+.header-info p{
+    text-shadow: 1px 1px 1px white;
+}
+
+table{
+    border-collapse: collapse;
+    border: 0px;
+    font-size: 12px;
+    width: 100%;
+}
+
+caption{
+    font-weight: bolder;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px grey;
+    text-transform: capitalize;
+}
+/* th text metni sola yaslanmis */
+th{
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background: lightskyblue;
+}
+
+td{
+    padding: 5px;
+}
+/* daha önce aciklama yapilmis tag'lere, tekrarinda yorum satiri eklemedim */
