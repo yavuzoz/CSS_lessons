@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000
+}
+
+.profile {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: url(./img/yavuz.jpg);
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile:hover .overlay {
+    opacity: 0.8
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 8px
+}
+
+.social-icons li {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(243, 239, 239);
+    border-radius: 5px;
+    transition: all 1s
+}
+
+s.social-icons li img {
+    width: 15px;
+    height: 15px;
+}
+
+.social-icons li:hover {
+    background: #fff;
+    color: #000
+}
+
+.overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #fff;
+    flex: column
+}
+
+section {
+    margin: 2rem;
+    flex: 1 0 45%;
+}

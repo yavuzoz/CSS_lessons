@@ -1,0 +1,146 @@
+/********************
+General Styling
+********************/
+*{
+    box-sizing: border-box;
+}
+/********************
+Typology
+********************/
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+legend{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* blockquote{
+    font-size: 16px;
+    color: #8f2020;
+    font-style: italic; */
+}
+/*fieldset altindaki tÃƒÂ¼m spanler*/
+/* fieldset span{
+    float: right;
+} */
+
+/********************
+Colors
+********************/
+blockquote{
+    color: #635757;
+}
+.social-media {
+    border:2px solid;
+    border-color: #4CAF50;
+    margin: 5px;
+}
+figcaption {
+    border:2px solid;
+    border-color: #4CAF50;
+    margin: 5px;
+    padding:5px;
+    font-size: larger;
+    text-align: center;
+
+}
+tr:nth-child(even){
+    background: rgb(66, 144, 196);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+th{
+    background: #5486c7;
+    color: rgb(44, 7, 7);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+/********************
+Layout
+********************/
+main{
+    width: auto;
+    margin: auto;
+}
+
+header{
+    width: auto;
+    background: url("https://cdn.cjr.org/wp-content/uploads/2019/07/AdobeStock_100000042-e1563305717660-686x371.jpeg") no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+#content-container{
+    /* display: flex;
+    position: sticky;
+    top: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#left-side{
+    flex-grow: 1;
+}
+
+#right-side{
+    flex-grow: 3;
+    
+}
+
+fieldset{
+    margin-top: 20px;
+}
+
+/********************
+Components
+********************/
+figure{
+    margin:0px;
+}
+
+.profile-image{
+    max-width: 200px;
+    border-color: darkslategray;
+    background-color: green;
+    border: 2px solid #4CAF50;
+    
+}
+
+/*social meda div taginin altindaki tÃƒÂ¼m img taglari kestediliyor*/
+.social-media img{
+    width: 24px;
+}
+
+.header-info p{
+    text-shadow: 1px 1px 1px rgb(52, 218, 240);
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    border: 0px;
+    font-size: 12px;
+    width: 100%;
+}
+
+caption{
+    font-weight: bolder;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgb(96, 139, 129);
+    text-transform: capitalize;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+th{
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: rgb(215, 164, 218);
+}
+
+td{
+    padding: 5px;
+}
