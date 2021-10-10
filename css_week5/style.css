@@ -22,7 +22,7 @@ main {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 25vw;
-    height: 35vh;
+    height: 40vh;
     padding: 50px;
 }
 .grid-item {
@@ -43,17 +43,25 @@ main {
     border-bottom-right-radius: 95px;
     border-bottom-left-radius: 95px;
 }
-#pictur_2 {
-    background-color: #62306D;
+/* pictur-2 */
+.grid-container-2 {
+    background-color: #e3516e;
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 30vw;
-    height: 45vh;
+    grid-template-columns: auto auto;
+    width: 20vw;
+    height: 40vh;
+    padding: 50px;
 }
-#pictur_3 {
-    background-color: #62306D;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 30vw;
-    height: 45vh;
+
+.grid-item-2:nth-child(1) {
+    background-color: #51b5a9;
+    border-top-left-radius: 595px;
+}
+.grid-item-2:nth-child(2) {
+    background-color: #fade8b;
+    border-top-right-radius: 595px;
+}
+.grid-item-2:nth-child(3) {
+    background-color: white;
+    border-bottom-left-radius: 595px;
 }
