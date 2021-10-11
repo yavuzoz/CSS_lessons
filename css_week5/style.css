@@ -171,6 +171,9 @@ main {
     .grid-container, .container-3, .grid-container-2 {
         width: 80vw;
     }
+    #name {
+        font-size: 20px;
+    }
 
     main {
         margin: 10px 10px;
