@@ -13,7 +13,7 @@ main {
     height: 100vh;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 1.1vw;
     margin-top: 5vw;
@@ -138,6 +138,7 @@ main {
     top: 7vh;
     border-radius: 595px;
 }
+
 .container-right {
     background-color: #eca03d;
     position: relative;
@@ -148,6 +149,7 @@ main {
     border-top-left-radius: 595px;
     border-top-right-radius: 595px;
 }
+
 .black-box-right {
     background-color: black;
     position: absolute;
@@ -158,9 +160,19 @@ main {
     top: 1.9vh;
     border-radius: 595px;
 }
+
 #name {
     text-align: center;
     font: 10em x-small;
     margin-bottom: 15vh;
+}
 
+@media only screen and (min-width: 22em) and (max-width: 44em) {
+    .grid-container, .container-3, .grid-container-2 {
+        width: 80vw;
+    }
+
+    main {
+        margin: 10px 10px;
+    }
 }
