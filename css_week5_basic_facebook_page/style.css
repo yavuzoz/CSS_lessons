@@ -11,7 +11,9 @@ html, body, h1, p {
     display: grid;
     grid-template-areas: 'main main main form form' 'footer footer footer footer footer';
 }
-
+body {
+    background-color: #f0f6fc;
+}
 .grid-left {
     background-color: #f0f6fc;
     display: flex;
@@ -136,4 +138,16 @@ li {
 }
 .btn_lenguage {
     background-image:url(img/align-middle.svg) ;
+}
+@media only screen and (min-width: 22em) and (max-width: 44em) {
+    #grid-container {
+        display: grid;
+        grid-template-areas: 'main' 'form ' 'footer';
+    }
+
+    .container-right-bottom{
+        text-align: center;
+        margin-left: 10vw;
+
+    }
 }
