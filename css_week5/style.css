@@ -51,6 +51,8 @@ main {
     border-bottom-left-radius: 95px;
 }
 
+
+
 /* pictur-2 */
 .grid-container-2 {
     background-color: #cc8896;
@@ -120,7 +122,7 @@ main {
 .black-box {
     background-color: black;
     position: absolute;
-    z-index: 2;
+    /* z-index: 2; */
     width: 7.5vw;
     height: 15vh;
     left: 1.9vw;
@@ -131,7 +133,7 @@ main {
 .red-box {
     background-color: rgb(116, 22, 22);
     position: absolute;
-    z-index: 3;
+    /* z-index: 3; */
     width: 4vw;
     height: 8vh;
     left: 3.6vw;
@@ -167,7 +169,7 @@ main {
     margin-bottom: 15vh;
 }
 
-@media only screen and (min-width: 22em) and (max-width: 44em) {
+@media only screen and (min-width: 10em) and (max-width: 39em) {
     .grid-container, .container-3, .grid-container-2 {
         width: 80vw;
     }

@@ -9,7 +9,7 @@ html, body, h1, p {
 /* main ve 2 parca ve footer olmak uzre 3 parcaya bäldüm, grid ile . her bir grid parcasinin alt elemanlarinda flex özelligi kullanildi.*/
 #grid-container {
     display: grid;
-    grid-template-areas: 'main main main form form' 'footer footer footer footer footer';
+grid-template-areas: 'main form' ' footer footer';
 }
 body {
     background-color: #f0f6fc;
@@ -18,9 +18,12 @@ body {
     background-color: #f0f6fc;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     grid-area: main;
+    padding: 50px;
     width: 50vw;
-    height: 93vh;
+    height: 92vh;
 }
 .grid-left > h1 {
     font-family:Helvetica, Arial, sans-serif; 
@@ -28,8 +31,6 @@ body {
     font-size: 62px;
     line-height: 36px;
     color: #2b79ee;
-    margin-left: 15vw;
-    margin-top: 25vh;
 }
 .grid-left > p {
     font-family:Helvetica, Arial, sans-serif; 
@@ -46,8 +47,13 @@ body {
 .grid-right {
     background-color: #f0f6fc;
     grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 50vw;
-    height: 93vh;
+    height: 92vh;
+    padding: 50px;
 }
 
 .container-right {
@@ -55,9 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 380px;
-    height: 380px;
-    margin-left: 5vw;
-    margin-top: 14vh;
+    height: auto;
     border-radius: 9px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -67,10 +71,12 @@ input , #contentCurve, #anmelden{
     margin:  10px 15px;
     border-radius: 5px;
 }
+#password-vergessen{
+    text-align: center;
+}
 .container-right> p {
     text-align: center;
     color: #0b1e3b;
-    border-inline-start-style: ;
     margin: 8px;
 }
 #anmelden {
@@ -93,7 +99,7 @@ input , #contentCurve, #anmelden{
     text-align: center;
     font-size: 13px;
     margin-top: 20px;
-    margin-right: 18vw;
+    margin-bottom: 20px;
     
 }
 /* footer  */
@@ -129,25 +135,22 @@ input , #contentCurve, #anmelden{
     color: #1c1e21;
 }
 
-#linie {
-    margin-left: 15vw;
-    margin-right: 3vw;
-}
 li {
     margin: 0.5px 3px ;
 }
+
 .btn_lenguage {
     background-image:url(img/align-middle.svg) ;
 }
-@media only screen and (min-width: 22em) and (max-width: 44em) {
+@media screen and (max-width: 700px) {
     #grid-container {
         display: grid;
         grid-template-areas: 'main' 'form ' 'footer';
     }
-
-    .container-right-bottom{
-        text-align: center;
-        margin-left: 10vw;
-
+    .grid-left, .grid-right {
+        height: fit-content;
+        display: flex;
+        padding: 100px;
     }
+  
 }

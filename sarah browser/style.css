@@ -1,0 +1,105 @@
+/* general settings */
+*{
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* colors */
+a {
+    color: tomato;
+}
+a:hover{
+    color: brown;
+}
+/* typolgy */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+h1{
+    font-weight: bold
+}
+/* layout */
+main{
+    width: 100 vw;
+    height: 100 vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+}
+#category-container{
+    flex-basis: 1ovw;
+}
+#basket-container{
+    flex-basis: 10vw;
+}
+#content-container{
+    flex-grow: 3;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+#movies-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-height: 80vh;
+}
+.movie{
+    flex-basis: 30vw;
+}
+.movie{
+    border: 1px solid red;
+    margin: 15px;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1px;
+}
+footer>button{
+    width: 30px;
+    height: 30px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border:2px solid black;
+}
+.branding{
+    display: flex;
+    flex-direction: column; 
+    border:2px solid black;
+}
+.actions{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    border:2px solid black;
+
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+#footer-bottom{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    border:2px solid black;
+    height: 20vh;
+    align-items: center;
+}

@@ -20,20 +20,25 @@
         </main>
         <section class="grid-right">
             <section class="container-right">
-                <form target="_blank">
-                    <input type="email" id="email" name="email" placeholder="E-Mail-Adresse oder Telefonnummer"><br>
-                    <input type="password" id="pwd" name="pwd" placeholder="password"><br>
-                    <button type="button" id="anmelden" onclick="window.location.href= '#';"
-                        target="_blank">Anmelden</button>
-                </form>
-                <p><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
-                        target="_blank">Passwort vergessen?</a></p>
+                <div>
+                    <form target="_blank">
+                        <input type="email" id="email" name="email" placeholder="E-Mail-Adresse oder Telefonnummer"><br>
+                        <input type="password" id="pwd" name="pwd" placeholder="password"><br>
+                        <button type="button" id="anmelden" onclick="window.location.href= '#';"
+                            target="_blank">Anmelden</button>
+                    </form>
+                </div>
+                <div id="password-vergessen">
+                    <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+                            target="_blank">Passwort vergessen?</a>
+                </div>
                 <div id="contentCurve">
                     <hr>
                 </div>
-                <button type="button" id="btn-sing-up" onclick="window.location.href= '#';"
-                    target="_blank">Neues
-                    Konto erstellen</button>
+                <div>
+                    <button type="button" id="btn-sing-up" onclick="window.location.href= '#';" target="_blank">Neues
+                        Konto erstellen</button>
+                </div>
             </section>
             <section class="container-right-bottom">
                 <p>Erstelle eine Seite für einen Star , eine Band oder ein</p>
