@@ -2,18 +2,28 @@
     box-sizing: content-box;
 }
 
-html, body, h1, p {
+html,
+body,
+h1,
+p {
     margin: 0px;
     padding: 0px;
 }
+
 /* main ve 2 parca ve footer olmak uzre 3 parcaya bäldüm, grid ile . her bir grid parcasinin alt elemanlarinda flex özelligi kullanildi.*/
 #grid-container {
     display: grid;
-grid-template-areas: 'main form' ' footer footer';
+    grid-template-areas: 'main form'' footer footer';
+    min-height: 900px;
+    align-items: center;
+    justify-content: center;
 }
+
 body {
     background-color: #f0f6fc;
+    height: 100vh;
 }
+
 .grid-left {
     background-color: #f0f6fc;
     display: flex;
@@ -21,19 +31,20 @@ body {
     align-items: center;
     justify-content: center;
     grid-area: main;
-    padding: 50px;
     width: 50vw;
     height: 92vh;
 }
-.grid-left > h1 {
-    font-family:Helvetica, Arial, sans-serif; 
+
+.grid-left>h1 {
+    font-family: Helvetica, Arial, sans-serif;
     font-style: normal;
     font-size: 62px;
     line-height: 36px;
     color: #2b79ee;
 }
-.grid-left > p {
-    font-family:Helvetica, Arial, sans-serif; 
+
+.grid-left>p {
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
@@ -43,6 +54,7 @@ body {
     margin-right: 15vw;
     margin-top: 3vh;
 }
+
 /* form */
 .grid-right {
     background-color: #f0f6fc;
@@ -53,7 +65,7 @@ body {
     justify-content: center;
     width: 50vw;
     height: 92vh;
-    padding: 50px;
+
 }
 
 .container-right {
@@ -65,28 +77,35 @@ body {
     border-radius: 9px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-input , #contentCurve, #anmelden{
+
+input,
+#contentCurve,
+#anmelden {
     width: 325px;
     height: 50px;
-    margin:  10px 15px;
+    margin: 10px 15px;
     border-radius: 5px;
 }
-#password-vergessen{
+
+#password-vergessen {
     text-align: center;
 }
-.container-right> p {
+
+.container-right>p {
     text-align: center;
     color: #0b1e3b;
     margin: 8px;
 }
+
 #anmelden {
     background-color: #2b79ee;
     color: #f0f6fc;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#btn-sing-up{
-    margin:0  70px;
+
+#btn-sing-up {
+    margin: 0 70px;
     margin-bottom: 15px;
     width: 200px;
     height: 50px;
@@ -94,14 +113,16 @@ input , #contentCurve, #anmelden{
     background-color: rgb(102, 207, 102);
     color: #f0f6fc;
 }
-.container-right-bottom{
+
+.container-right-bottom {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 13px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
+
 /* footer  */
 
 .grid-bottom {
@@ -110,24 +131,27 @@ input , #contentCurve, #anmelden{
     flex-direction: column;
     grid-area: footer;
 }
+
 .list-top {
     display: flex;
     flex-wrap: wrap;
-    list-style-type:none;
+    list-style-type: none;
     margin-left: 13vw;
 }
+
 .list-bottom {
     display: flex;
     flex-wrap: wrap;
-    list-style-type:none;
+    list-style-type: none;
     margin-left: 13vw;
 }
 
 .footer-end {
     margin-left: 15vw;
 }
-.footer-end > span {
-    font-family:Helvetica, Arial, sans-serif; 
+
+.footer-end>span {
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 11px;
@@ -136,23 +160,31 @@ input , #contentCurve, #anmelden{
 }
 
 li {
-    margin: 0.5px 3px ;
+    margin: 0.5px 3px;
 }
 
 .btn_lenguage {
-    background-image:url(img/align-middle.svg) ;
+    background-image: url(img/align-middle.svg);
 }
+
 @media screen and (max-width: 700px) {
     #grid-container {
         display: grid;
-        grid-template-areas: 'main' 'form ' 'footer';
-    }
-    .grid-left, .grid-right {
+        grid-template-areas: 'main''form ''footer';
+        width: fit-content;
         height: fit-content;
+        min-height: 800px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .grid-left,
+    .grid-right {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 100px;
+        padding: 100px 100px;
     }
-  
+
 }
