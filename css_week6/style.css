@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aqua;
+}
+
+div {
+    border: 0.5px solid black;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    margin: 30px;
+    grid-template-columns: 1.1fr 1fr 1fr 0.9fr 1fr;
+    grid-template-rows: 1fr 0.4fr 2.3fr 0.3fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left-top left-top middle-top middle-top right-top"
+        "middle-left middle middle dark-light-botton right-top"
+        "middle-left middle middle middle-right middle-right"
+        "bottom-left bottom-left bottom-left bottom-right bottom-right";
+}
+
+.left-top {
+    grid-area: left-top;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-top-item1{
+    background-color: aqua;
+    width: 80%;
+    height: 20%;
+}
+.left-top-item2{
+    background-color: aqua;
+    width: 80%;
+    height: 10%;
+}
+.left-top-item3{
+    background-color: aqua;
+    width: 30%;
+    height: 25%;
+}
+
+.middle-top {
+    grid-area: middle-top;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.middle-top-item1{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 350px;
+}
+.middle-top-item2{
+    background-color:aliceblue;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+
+.right-top {
+    grid-area: right-top;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-top-item1{
+    background-color: aliceblue;
+    width: 90%;
+    height: 7%;
+}
+
+.dark-light-botton {
+    grid-area: dark-light-botton;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.middle-left {
+    grid-area: middle-left;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+.middle-left-item1{
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 20px;
+    width: 60%;
+    height: 5px;
+}
+.middle-left-item2{
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 0px;
+    width: 90%;
+    height: 80%;
+}
+.middle-left-item3{
+    border-radius: 5px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 350px;
+    border: 1px solid aqua;
+}
+
+.middle-right {
+    grid-area: middle-right;
+}
+
+.bottom-left {
+    grid-area: bottom-left;
+}
+
+.bottom-right {
+    grid-area: bottom-right;
+}
