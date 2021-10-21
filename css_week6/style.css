@@ -4,9 +4,13 @@ body {
     background-color: aqua;
 }
 
-div {
+/* div {
     border: 0.5px solid black;
-}
+} */
+
+/* div {
+    border: 1px solid black;
+} */
 
 .container {
     display: grid;
@@ -16,11 +20,7 @@ div {
     grid-template-rows: 1fr 0.4fr 2.3fr 0.3fr;
     gap: 30px 30px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "left-top left-top middle-top middle-top right-top"
-        "middle-left middle middle dark-light-botton right-top"
-        "middle-left middle middle middle-right middle-right"
-        "bottom-left bottom-left bottom-left bottom-right bottom-right";
+    grid-template-areas: "left-top left-top middle-top middle-top right-top""middle-left middle middle dark-light-botton right-top""middle-left middle middle middle-right middle-right""bottom-left bottom-left bottom-left bottom-right bottom-right";
 }
 
 .left-top {
@@ -31,17 +31,20 @@ div {
     align-items: center;
     justify-content: space-around;
 }
-.left-top-item1{
+
+.left-top-item1 {
     background-color: aqua;
     width: 80%;
     height: 20%;
 }
-.left-top-item2{
+
+.left-top-item2 {
     background-color: aqua;
     width: 80%;
     height: 10%;
 }
-.left-top-item3{
+
+.left-top-item3 {
     background-color: aqua;
     width: 30%;
     height: 25%;
@@ -55,19 +58,20 @@ div {
     align-items: center;
     justify-content: center;
 }
-.middle-top-item1{
+
+.middle-top-item1 {
     background-color: aqua;
     width: 50px;
     height: 50px;
     border-radius: 350px;
 }
-.middle-top-item2{
-    background-color:aliceblue;
+
+.middle-top-item2 {
+    background-color: aliceblue;
     width: 30px;
     height: 30px;
     position: absolute;
 }
-
 
 .right-top {
     grid-area: right-top;
@@ -77,59 +81,207 @@ div {
     align-items: center;
     justify-content: space-between;
 }
-.right-top-item1{
+
+.right-top-item1 {
     background-color: aliceblue;
-    width: 90%;
+    width: 100%;
     height: 7%;
 }
 
 .dark-light-botton {
     grid-area: dark-light-botton;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.light-botton {
+    background-color: aliceblue;
+    width: 75px;
+    height: 40px;
+    border-radius: 45px;
+}
+
+.light-botton-item {
+    width: 38px;
+    height: 38px;
+    border-radius: 350px;
+    border: 2px solid aqua;
+}
+
+.dark-botton-item {
+    background-color: aqua;
+    width: 38px;
+    height: 38px;
+    border-radius: 350px;
+    border: 2px solid aliceblue;
+    margin-left: 35px;
 }
 
 .middle {
     grid-area: middle;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-item-top {
+    background-color: aliceblue;
+    display: flex;
+    align-content: space-between;
+    width: 45%;
+    height: 30%;
+    margin-top: 20%;
+
+}
+
+.middle-item1 {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.middle-item2 {
+    border-color: aliceblue aliceblue aqua aliceblue;
+    border-style: solid;
+    border-width: 30px;
+    width: 0px;
+    height: 0px;
+    margin-top: auto;
+}
+
+.middle-item3 {
+    border-color: aliceblue aliceblue aqua aliceblue;
+    border-style: solid;
+    border-width: 50px;
+    width: 0px;
+    height: 0px;
+    margin-top: auto;
+}
+
+.middle-item-bottom {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 45%;
+    height: 100px;
+}
+
+.middle-item {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-top: 20px;
 }
 
 .middle-left {
     grid-area: middle-left;
-    background-color:aliceblue;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
 }
-.middle-left-item1{
+
+.middle-left-item1 {
     background-color: aqua;
     border-radius: 5px;
     margin: 20px;
     width: 60%;
     height: 5px;
 }
-.middle-left-item2{
+
+.middle-left-item2 {
     background-color: aqua;
     border-radius: 5px;
     margin: 0px;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 100vh;
 }
-.middle-left-item3{
+
+.middle-left-item3 {
     border-radius: 5px;
     margin: 20px;
-    width: 50px;
+    width: 30px;
     height: 50px;
-    border-radius: 350px;
+    border-radius: 450px;
     border: 1px solid aqua;
 }
 
 .middle-right {
     grid-area: middle-right;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-right-item {
+    background-color: aliceblue;
+    display: flex;
+    align-content: space-between;
+    width: 150px;
+    height: 100px;
+    margin-top: 150px;
+}
+
+.middle-right-item1 {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.middle-right-item2 {
+    border-color: aliceblue aliceblue aqua aliceblue;
+    border-style: solid;
+    border-width: 30px;
+    width: 0px;
+    height: 0px;
+    margin-top: auto;
+}
+
+.middle-right-item3 {
+    border-color: aliceblue aliceblue aqua aliceblue;
+    border-style: solid;
+    border-width: 50px;
+    width: 0px;
+    height: 0px;
+    margin-top: auto;
 }
 
 .bottom-left {
     grid-area: bottom-left;
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid aliceblue;
+}
+.bottom-left-item{
+    background-color: aliceblue;
+    width: 200px;
+    height: auto;
 }
 
 .bottom-right {
     grid-area: bottom-right;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.bottom-right-item1{
+    background-color: aliceblue;
+    width: 50px;
+    height: auto;
 }
