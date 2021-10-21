@@ -136,7 +136,7 @@ body {
     width: 45%;
     height: 30%;
     margin-top: 20%;
-
+    margin-left: 100px;
 }
 
 .middle-item1 {
@@ -151,6 +151,7 @@ body {
     border-color: aliceblue aliceblue aqua aliceblue;
     border-style: solid;
     border-width: 30px;
+    margin-top: 100px;
     width: 0px;
     height: 0px;
     margin-top: auto;
@@ -169,8 +170,8 @@ body {
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 45%;
+    justify-content: space-around;
+    width:15%;
     height: 100px;
 }
 
